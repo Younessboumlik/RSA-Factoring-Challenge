@@ -1,3 +1,4 @@
+#/usr/bin/python3
 import sys
 def first_number(n):
     for i in range(2,((n + 1)//2)+1):
@@ -12,8 +13,7 @@ if (__name__=="__main__"):
     k = 1
     A=[]
     A = list(f.readlines())
-    for i in A:
-        
+    for i in A:        
         p = first_number(int(i))
         q = int(i) // p
         if (k == len(A)):
