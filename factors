@@ -1,0 +1,14 @@
+def first_number(n):
+    for i in range(2,((n + 1)//2)+1):
+        if (n%i == 0):
+            return i
+    return (n)
+file_name = "numbers.txt"
+f = open(file_name,"r")
+i = 0
+A=[]
+A = list(f.readlines())
+for i in A:
+    p = first_number(int(i))
+    q = int(i) // p
+    print(p,q)
