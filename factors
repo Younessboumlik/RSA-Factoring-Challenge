@@ -2,8 +2,8 @@
 import sys
 def first_number(n):
     for i in range(2,((n + 1)//2)+1):
-        if (n%i == 0):
-            return i
+    if (n%i == 0):
+        return i
     return (n)
 
 if (__name__=="__main__"):
@@ -13,12 +13,12 @@ if (__name__=="__main__"):
     k = 1
     A=[]
     A = list(f.readlines())
-    for i in A:        
+    for i in A:
         p = first_number(int(i))
         q = int(i) // p
         if (k == len(A)):
-            print(i,"=",q,"*",p)
+            print(i+"="+str(q)+"*"+str(p))
         else:
-            print(i[:-1],"=",q,"*",p)
-        k = k + 1
-    f.close()
+            print(i[:-1]+"="+str(q)+"*"+str(p))
+            k = k + 1
+            f.close()
