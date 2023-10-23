@@ -2,8 +2,8 @@
 import sys
 def first_number(n):
     for i in range(2,((n + 1)//2)+1):
-    if (n%i == 0):
-        return i
+        if (n%i == 0):
+            return i
     return (n)
 
 if (__name__=="__main__"):
