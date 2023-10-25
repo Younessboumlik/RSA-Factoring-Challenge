@@ -16,5 +16,10 @@ if (__name__=="__main__"):
     for i in A:
         p = first_number(int(i))
         q = int(i) // p
-        print(i[:-1]+"="+str(q)+"*"+str(p))
+        if (k == len(A)):
+            print(i+"="+str(q)+"*"+str(p))
+        else:
+            print(i[:-1]+"="+str(q)+"*"+str(p))
+        k = k + 1
         f.close()
+
