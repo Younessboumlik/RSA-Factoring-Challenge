@@ -10,7 +10,6 @@ def first_number(n):
 if (__name__=="__main__"):
     file_name = sys.argv[1]
     f = open(file_name,"r")
-    if ()
     i = 0
     k = 1
     A=[]
@@ -18,6 +17,9 @@ if (__name__=="__main__"):
     for i in A:
         p = first_number(int(i))
         q = int(i) // p
-        print(i[:-1]+"="+str(q)+"*"+str(p))
+        if (k == len(A)):
+            print(i+"="+str(q)+"*"+str(p))
+        else:
+            print(i[:-1]+"="+str(q)+"*"+str(p))
         k = k + 1
         f.close()
