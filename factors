@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from asyncio.windows_events import NULL
 import sys
 def first_number(n):
     for i in range(2,((n + 1)//2)+1):
