@@ -10,7 +10,6 @@ def first_number(n):
 if (__name__=="__main__"):
     file_name = sys.argv[1]
     f = open(file_name,"r")
-    if ()
     i = 0
     k = 1
     A=[]
